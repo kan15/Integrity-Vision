@@ -8,25 +8,25 @@ There is also an object with string field types, which stores localized field he
 It is necessary to write a code that will create an array of objects of the following structure based on the above described objects:
 ```javascript
 {
-name: "field title." 
-value1: "value of field in object #1",
-value2: "value of the field in object #2",
- ...
-value [n-1]: 'value of the field in object no. [n-1] ",
-value [n]: "field value in object no. [n]".
+  name: "field title." 
+  value1: "value of field in object #1",
+  value2: "value of the field in object #2",
+   ...
+  value [n-1]: 'value of the field in object no. [n-1] ",
+  value [n]: "field value in object no. [n]".
 }
 ```
 If a field of boolean type - then print its value as *Yes/No*, date print in *dd.MM.yyyy* format.
 
 Provide the option that there may be no localization for the field. In this case, instead of localization you should print the *name of this field*.
 
-#####**Example:**
+**Example:**
 
-`[{fullName {surname: "xxx", firstName: "yyy", middleName: "zzz '}}}, {fullName {surname:" XXX ", firstName:" YYY ", middleName:" ZZZ'}}]` is an array of objects.
+`[{fullName {surname: "xxx", firstName: "yyy", middleName: "zzz '}}}, {fullName {surname:" XXX ", firstName:" YYY ", middleName:" ZZZ'}}]` *is an array of objects.*
 
-`{fullName {surname: true, firstName: true, middleName: false}}` - Transformation rule
+`{fullName {surname: true, firstName: true, middleName: false}}` - *Transformation rule*
 
-`{"fullName.surname": "last name", "fullName.middleName": "patronymic"}` - Localizations
+`{"fullName.surname": "last name", "fullName.middleName": "patronymic"}` - *Localizations*
 
-`[{name: "Last name", value1: "xxx", value2: "XXX"}, {name: "firstName", value1: "yyy", value2: "YYY"}]` - result
+`[{name: "Last name", value1: "xxx", value2: "XXX"}, {name: "firstName", value1: "yyy", value2: "YYY"}]` - *result*
 
